@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.pd-left-section
+{
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 130px;
+  padding-top: 100px;
+}
+.pd-right-section
+{
+  width: 70%;
+  height: 100vh;
+  background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    gap: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.pd-right-section::-webkit-scrollbar
+{
+    display: none;
+}
+.add-file-button
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px 45px;
+    border-radius: 2px;
+}
+.pd-profile-header img{
+    width: 70px;
+}
+.pd-left-section p{
+    font-family: "Inter";
+}
+.pd-profile-header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.links
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
+}

@@ -1,13 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+
+import Register from './Pages/Register';
+import PatientDashboard from './Pages/PatientDashboard';
+import DoctorDashboard from './Pages/DoctorDashboard';
+import PBookAppointment from './Pages/PBookAppointment';
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Register/>,
+  },
+  {
+    path:'/doctorDashboard',
+    element:<DoctorDashboard/>
+  },
+  {
+    path:'/patientDashboard',
+    element:<PatientDashboard/>
+  },
+  {
+    path:'pAppointments',
+    element:<PBookAppointment/>
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
